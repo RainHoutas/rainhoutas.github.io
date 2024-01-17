@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/houtas.webp">
+  
+  <title>Android美化教程①——material you风格探索记录 | RainHoutas的博客</title>
+  <link rel="canonical" href="http://example.com/2022/08/30/Android%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B%E2%91%A0/index.html">
+  <meta name="author" content="houtas" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="技术" />
+  
+  <meta name="description" content="前言是的，我又开新坑力，但是这也可能是高中的最后一更力（悲） 那么这个系列其实不太算教程，因为我觉得我对美化的探索和研究程度不足以出教程的，但是本人对美化的探索也有两年左右了，也大概能出一些像样的效果了，因此我打算写一系列不算教程的教程，那么为了方便讲述我会每期都选一个主题来讲解，从实例讲起不仅方便我攥稿，也方便大家能从我的教程中多多少少的学到一些东西，这样也就达成我的期望了。 注意：本期教程有大">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android美化教程①——material you风格探索记录">
+<meta property="og:url" content="http://example.com/2022/08/30/Android%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B%E2%91%A0/index.html">
+<meta property="og:site_name" content="RainHoutas的博客">
+<meta property="og:description" content="前言是的，我又开新坑力，但是这也可能是高中的最后一更力（悲） 那么这个系列其实不太算教程，因为我觉得我对美化的探索和研究程度不足以出教程的，但是本人对美化的探索也有两年左右了，也大概能出一些像样的效果了，因此我打算写一系列不算教程的教程，那么为了方便讲述我会每期都选一个主题来讲解，从实例讲起不仅方便我攥稿，也方便大家能从我的教程中多多少少的学到一些东西，这样也就达成我的期望了。 注意：本期教程有大">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/houtas.webp">
+<meta property="article:published_time" content="2022-08-30T12:51:09.000Z">
+<meta property="article:modified_time" content="2022-08-31T01:32:00.000Z">
+<meta property="article:author" content="houtas">
+<meta property="article:tag" content="技术">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/houtas.webp">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner2.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-file"></i>记录</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-heartbeat"></i>好果汁</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/myself/"><i class="fa fa-paper-plane"></i>自我介绍</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/mybox/"><i class="fa fa-rss"></i>资源库</a></li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a><i class="fa fa-link"></i>重要链接</a>
+                                                <ul class="sub-menu">
+                                                    
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://space.bilibili.com/34542802/fans/follow">俺的b站</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://github.com/RainHoutas/RainHoutas.github.io">项目链接</a></li>
+                                                        
+                                                    
+                                                </ul>
+                                            </li>
+                                        
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">RainHoutas的博客</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>RainHoutas的博客</h2> <br />
+                        <span>welcome</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/08/30/Android%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B%E2%91%A0/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Android美化教程①——material you风格探索记录</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2022-08-30T12:51:09.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-08-30</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">houtas</span>
+                </li>
+                
+                
+                    <li>
+                        <i class="fa fa-eye"></i>
+                        <span id="twikoo_visitors"> </span> 次阅读
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1661909520000"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E7%89%87"><span class="toc-number">2.</span> <span class="toc-text">正片</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E7%B1%B3note5%E2%80%94%E2%80%94%E5%85%B6%E5%AE%9E%E6%98%AF%E4%BC%98%E5%8C%96"><span class="toc-number">2.2.</span> <span class="toc-text">红米note5——其实是优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AD%85%E8%93%9D2%E2%80%94%E2%80%94%E7%BE%8E%E5%8C%96%EF%BC%9F%E5%9C%A3%E5%8C%96%EF%BC%81"><span class="toc-number">2.3.</span> <span class="toc-text">魅蓝2——美化？圣化！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0pad-pro2020%E2%80%94%E2%80%94Android12L"><span class="toc-number">2.4.</span> <span class="toc-text">联想小新pad pro2020——Android12L</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%BE%E5%A3%B0"><span class="toc-number">3.</span> <span class="toc-text">尾声</span></a></li></ol>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>是的，我又开新坑力，但是这也可能是高中的最后一更力（悲）</p>
+<p>那么这个系列其实不太算教程，因为我觉得我对美化的探索和研究程度不足以出教程的，但是本人对美化的探索也有两年左右了，也大概能出一些像样的效果了，因此我打算写一系列不算教程的教程，那么为了方便讲述我会每期都选一个主题来讲解，从实例讲起不仅方便我攥稿，也方便大家能从我的教程中多多少少的学到一些东西，这样也就达成我的期望了。</p>
+<p>注意：本期教程有大量操作需要root刷模块</p>
+<p>那么废话虽然说了很多，但是还是废话少说的开始吧，here we &lt;(￣︶￣)GO!</p>
+<h1 id="正片"><a href="#正片" class="headerlink" title="正片"></a>正片</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>早在安卓12更新前我就对前瞻视频里的material you风格产生了极大的兴趣，好看的小部件，来自壁纸的灵魂取色，风格统一的图标还有全局的统一色调都深深的吸引了我，我认为你可以说它不适合你，但是它绝对算不上丑，于是在我体验过安卓12后，我便对material you风格的美化进行了深入的研究</p>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>成果展示</span></div>
+    <div class="xContent"><div class="inner">
+        <p><img src="/images/%E7%BE%8E%E5%8C%961/%E6%88%90%E6%9E%9C1.webp" alt="←魅蓝2 红米note5→"></p>
+<p><img src="/images/%E7%BE%8E%E5%8C%961/%E6%88%90%E6%9E%9C2.webp" alt="联想小新padpro 2020"></p>
+ 
+    </div></div>
+    </div>
+
+<p>那么接下来我将对以上三台机子的美化过程进行介绍和讲解，希望对你有帮助。</p>
+<h2 id="红米note5——其实是优化"><a href="#红米note5——其实是优化" class="headerlink" title="红米note5——其实是优化"></a>红米note5——其实是优化</h2><p>首当期冲就是红米note5啦，正如标题所示这个手机目前用的就是安卓12的类原生rom aex（详见<a target="_blank" rel="noopener" href="http://rainhoutas.top/2022/03/12/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%952%E2%80%94%E7%BA%A2%E7%B1%B3note5%E2%91%A0/">搞机记录2</a>和<a target="_blank" rel="noopener" href="http://rainhoutas.top/2022/04/03/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%953%E2%80%94%E7%BA%A2%E7%B1%B3note5%E2%91%A1/">搞机记录3</a>）</p>
+<p>所以对这个手机与其说是美化，还不如说是优化，那么在自定义如此高的rom下又有啥要优化的呢</p>
+<p>首先是桌面，rom自带的桌面对自适应图标的适配有很大问题，于是我们可以这么解决：先下载第三方桌面lawnchair（注意一定是最新版12.0），其次下载cayicons和它配套的补全计划，长按屏幕在主屏幕设置里的通用中找到图标风格，选择cay补全计划和开启带主题的图标，ok完美，这个图标包的适配率还是很高的，但是接下来你会发现你的桌面动画出毛病了，这是候只需刷入QuickSwitch模块，在配套应用中选择lawnchair，重启后动画就正常了，以上提到的软件和模块均可在酷安很容易的找到</p>
+<p>其次是，某些应用没有按照谷歌的设计规范设计导致并不适配material you主题，这里我们可以通过刷模块来解决一小部分应用，下面推荐两个我刷了的：一个是人在且号无大佬的coolapk monet 另一个是大而丑大佬的We Cheat Monet 两个模块均可在酷安搜索到，效果还是十分好的。</p>
+<h2 id="魅蓝2——美化？圣化！"><a href="#魅蓝2——美化？圣化！" class="headerlink" title="魅蓝2——美化？圣化！"></a>魅蓝2——美化？圣化！</h2><div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>成果展示</span></div>
+    <div class="xContent"><div class="inner">
+        <p><img src="/images/%E7%BE%8E%E5%8C%961/%E6%88%90%E6%9E%9C3.webp" alt="1"></p>
+<p><img src="/images/%E7%BE%8E%E5%8C%961/%E6%88%90%E6%9E%9C4.webp" alt="2"></p>
+<p><img src="/images/%E7%BE%8E%E5%8C%961/%E6%88%90%E6%9E%9C5.webp" alt="3"></p>
+ 
+    </div></div>
+    </div>
+
+<p>之前提到我的魅蓝2刷了安卓9的crDroid，那么如果我要在低版本的安卓上体验material you该怎么办呢？别急，也有办法。</p>
+<p>首先还是桌面，还是lawnchair+cayicons但是这次不要刷QuickSwitch模块，因为这个模块仅支持安卓12及以上的系统。不过不用担心，即使没有QuickSwitch你的动画也应该不会没的，至少我的还在。</p>
+<p>其次对于crDroid这个rom来说，它是有系统强调色的，虽然不能自定义，但是可以选个跟你壁纸相近的颜色。</p>
+<p>然后是桌面小组件，这也算是material you风格的灵魂。这里我们需要连个软件，一个是kwgt，一个是安卓12小组件（均可在酷安下载），下载完后我们在桌面添加组件。关于kwgt的使用，碍于<del>篇幅</del>我的表达能力，建议不会的同学去酷安搜搜大佬的教程。关于颜色可以去酷安下载软件好色，然后取一下桌面的颜色来设置。</p>
+<p>最后是控制和音量面板，这是一个可选可不选的东东，我用的是oneshade和ultra volume（还是酷安搜索）当然还有很多同类软件供你使用，看你个人喜好。当然我在Google play商店里发现了一个仿安卓12控制面板的应用，但我觉得太糙了就没用。</p>
+<h2 id="联想小新pad-pro2020——Android12L"><a href="#联想小新pad-pro2020——Android12L" class="headerlink" title="联想小新pad pro2020——Android12L"></a>联想小新pad pro2020——Android12L</h2><div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>成果展示</span></div>
+    <div class="xContent"><div class="inner">
+        <p><img src="/images/%E7%BE%8E%E5%8C%961/%E6%88%90%E6%9E%9C6.webp" alt="qaq"></p>
+ 
+    </div></div>
+    </div>
+
+<p>因为我找不到其他包，所以我的小新pad现在还是安卓11，而上面的lawnchair对平板没有适配，所以我只能用另一种方案</p>
+<p>首先下载total launcher，然后去酷安搜索菌菌小洛大佬的material you主题2.0</p>
+<p>这里total launcher的教材也还是建议去酷安搜索教程学习，这里我对原主题做了一定的改动，你也可以自己改成自己喜欢的样子，因为total launcher的自定义程度是高到离谱的，改动用的kwgt插件叫your material，酷安不太好找，我这里上传到我的资源库里了，有需要可以去下载哦，图标方面我用的是pix you cornflower light icons加icon pack studio进行修改（这两个软件是在Google商店下载的，我也会上传到资源库），取色用的是实时取色器。</p>
+<h1 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h1><p>感谢大家阅读我的文章，希望这篇文章可以帮到你，那么我们下期再见力</p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://example.com/2022/08/30/Android%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B%E2%91%A0/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://example.com/2022/08/30/Android%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B%E2%91%A0/";
+            const title         = "「Android美化教程①——material you风格探索记录」";
+            const excerpt       = `前言是的，我又开新坑力，但是这也可能是高中的最后一更力（悲）
+那么这个系列其实不太算教程，因为我觉得我对美化的探索和研究程度不足以出教程的，但是本人对美化的探索也有两年左右了，也大概能出一些像样的效果了，因此我打算写一系列不算教程的教...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2022-08-31T01:32:00.000Z" itemprop="dateModified">最后编辑：2022-08-31</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" 搞机记录4：魅蓝2（史诗大活）" href="/2022/06/24/搞机记录4-魅蓝2（史诗大活）/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 搞机记录5：红米note5③-安卓13类原生体验" href="/2023/01/08/搞机记录5/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <div class="post-comments lazy-load bg-image">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: 'https://com.rainhoutas.one/', el: '#tcomment' });
+        }
+        if (typeof twikoo === 'undefined') {
+            const src = '/vendors/twikoo@1.5.11/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/houtas.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"> 𝒯𝒽ℯ  𝓅𝒶𝓈𝓉  𝒾𝓈  𝓃ℯ𝓋ℯ𝓇  𝒹ℯ𝒶𝒹,  <br> ℐ𝓉  𝒾𝓈  𝓃ℴ𝓉  ℯ𝓋ℯ𝓇  𝓅𝒶𝓈𝓉. </p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                15
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                5
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                4
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E7%89%87"><span class="toc-text">正片</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E7%B1%B3note5%E2%80%94%E2%80%94%E5%85%B6%E5%AE%9E%E6%98%AF%E4%BC%98%E5%8C%96"><span class="toc-text">红米note5——其实是优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AD%85%E8%93%9D2%E2%80%94%E2%80%94%E7%BE%8E%E5%8C%96%EF%BC%9F%E5%9C%A3%E5%8C%96%EF%BC%81"><span class="toc-text">魅蓝2——美化？圣化！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%81%94%E6%83%B3%E5%B0%8F%E6%96%B0pad-pro2020%E2%80%94%E2%80%94Android12L"><span class="toc-text">联想小新pad pro2020——Android12L</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%BE%E5%A3%B0"><span class="toc-text">尾声</span></a></li></ol>
+    </div>
+</aside>
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95/">功能测试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%95/">搞机记录</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%8C%96/">美化</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%81%8A%E5%A4%A9%E6%9D%82%E8%B0%88/">聊天杂谈</a><span class="category-list-count">6</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 0.7em;">安卓</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.8em;">技术</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 0.6em;">测试</a> <a href="/tags/%E8%AF%B4%E8%AF%B4/" style="font-size: 0.7em;">说说</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2024/01/14/%E4%BA%8C%E5%91%A8%E5%B9%B4%E5%BF%AB%E4%B9%90/"><i class="fa  fa-book"></i> 博客二周年快乐</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/09/04/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%95%E7%89%B9%E5%88%AB%E7%AF%87/"><i class="fa  fa-book"></i> 搞机记录特别篇：Google Pixel5 真原生舒爽体验</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/09/04/%E4%B8%80%E6%AC%A1%E7%90%86%E5%8F%91%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/"><i class="fa  fa-book"></i> 一次理发引发的思考</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/01/08/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/"><i class="fa  fa-book"></i> 搞机记录5：红米note5③-安卓13类原生体验</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/08/30/Android%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B%E2%91%A0/"><i class="fa  fa-book"></i> Android美化教程①——material you风格探索记录</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        <li><a href="mailto:1271084579@qq.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://t.me/Rain houtas"><i class="fa fa-telegram"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://github.com/rainhoutas">
+                                    
+                                        <i class="fa fa-github"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 RainHoutas的博客 版权所有.</li>
+                            <li>已存活时长<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by houtas.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://rainhoutas.github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="snow-switch">
+                        <span class="fa fa-snowflake-o"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+    <div>
+        <canvas id="snow"></canvas>
+        <script async src="/js/snow.min.js"></script>
+    </div>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="5351093313"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>

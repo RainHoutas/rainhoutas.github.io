@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/houtas.webp">
+  
+  <title>搞机记录5：红米note5③-安卓13类原生体验 | RainHoutas的博客</title>
+  <link rel="canonical" href="http://example.com/2023/01/08/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/index.html">
+  <meta name="author" content="houtas" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="安卓, 技术" />
+  
+  <meta name="description" content="前言本篇文章为红米note5安卓13rom不完全的不完全简单体验。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搞机记录5：红米note5③-安卓13类原生体验">
+<meta property="og:url" content="http://example.com/2023/01/08/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/index.html">
+<meta property="og:site_name" content="RainHoutas的博客">
+<meta property="og:description" content="前言本篇文章为红米note5安卓13rom不完全的不完全简单体验。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/houtas.webp">
+<meta property="article:published_time" content="2023-01-08T07:53:36.000Z">
+<meta property="article:modified_time" content="2024-01-14T12:50:42.229Z">
+<meta property="article:author" content="houtas">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="安卓">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/houtas.webp">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner2.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-file"></i>记录</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-heartbeat"></i>好果汁</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/myself/"><i class="fa fa-paper-plane"></i>自我介绍</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/mybox/"><i class="fa fa-rss"></i>资源库</a></li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a><i class="fa fa-link"></i>重要链接</a>
+                                                <ul class="sub-menu">
+                                                    
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://space.bilibili.com/34542802/fans/follow">俺的b站</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://github.com/RainHoutas/RainHoutas.github.io">项目链接</a></li>
+                                                        
+                                                    
+                                                </ul>
+                                            </li>
+                                        
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">RainHoutas的博客</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>RainHoutas的博客</h2> <br />
+                        <span>welcome</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/08/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">搞机记录5：红米note5③-安卓13类原生体验</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2023-01-08T07:53:36.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-01-08</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">houtas</span>
+                </li>
+                
+                
+                    <li>
+                        <i class="fa fa-eye"></i>
+                        <span id="twikoo_visitors"> </span> 次阅读
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1705236642229"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E7%89%87"><span class="toc-number">2.</span> <span class="toc-text">正片</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#crDroid"><span class="toc-number">2.1.</span> <span class="toc-text">crDroid</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A"><span class="toc-number">2.1.0.1.</span> <span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-number">2.1.0.2.</span> <span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#superiorOS"><span class="toc-number">2.2.</span> <span class="toc-text">superiorOS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-1"><span class="toc-number">2.2.0.1.</span> <span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">2.2.0.2.</span> <span class="toc-text">总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nustara-project"><span class="toc-number">2.3.</span> <span class="toc-text">nustara project</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-2"><span class="toc-number">2.3.0.1.</span> <span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-1"><span class="toc-number">2.3.0.2.</span> <span class="toc-text">总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BiancaProject"><span class="toc-number">2.4.</span> <span class="toc-text">BiancaProject</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-3"><span class="toc-number">2.4.0.1.</span> <span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-2"><span class="toc-number">2.4.0.2.</span> <span class="toc-text">总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mcaosp"><span class="toc-number">2.5.</span> <span class="toc-text">mcaosp</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-4"><span class="toc-number">2.5.0.1.</span> <span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A-1"><span class="toc-number">2.5.0.2.</span> <span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pixel-experience"><span class="toc-number">2.6.</span> <span class="toc-text">pixel experience</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7-amp-%E6%80%BB%E7%BB%93"><span class="toc-number">2.6.0.1.</span> <span class="toc-text">评价&amp;总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BananaDroid"><span class="toc-number">2.7.</span> <span class="toc-text">BananaDroid</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-5"><span class="toc-number">2.7.0.1.</span> <span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A-2"><span class="toc-number">2.7.0.2.</span> <span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spark-OS"><span class="toc-number">2.8.</span> <span class="toc-text">Spark OS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-6"><span class="toc-number">2.8.0.1.</span> <span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A-3"><span class="toc-number">2.8.0.2.</span> <span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mcaosp-1"><span class="toc-number">2.9.</span> <span class="toc-text">mcaosp</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-number">3.</span> <span class="toc-text">结尾</span></a></li></ol>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本篇文章为红米note5安卓13rom不完全的不完全简单体验。</p>
+<span id="more"></span>
+
+<p>不知不觉红米note5的文章已经更了三篇了，相信以后还会有更多关于这个刷机小王子的文章吧。</p>
+<p>这次刷机取材的过程很曲折，我的屏幕掉了一次但是被我粘好了，马达也从正常到短路到现在报废了，电池也一天比一天拉了，不知道什么时候他就被我玩报废力。</p>
+<p>碍于测试时间和个人经历等等等等问题，很多的系统都是草草体验，所以很多系统的续航和日用体验之类的就没法深入测试了捏，敬请原谅捏。</p>
+<p>另外由于素材过于零碎导致后期整理困难并且也并没有什么特别值得展示的内容本次文章将仅有最后效果配图等少量配图</p>
+<h1 id="正片"><a href="#正片" class="headerlink" title="正片"></a>正片</h1><h2 id="crDroid"><a href="#crDroid" class="headerlink" title="crDroid"></a>crDroid</h2><h4 id="评价："><a href="#评价：" class="headerlink" title="评价："></a>评价：</h4><p>够用但不优秀  日用不太行，很多小细节忍不了，续航还不太行</p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>1.自定义全汉化且丰富<br>2.耗电有点蹦<br>3.状态栏时钟可居中和调整大小<br>4.动画流畅<br>5.无多壁纸取色方案<br>6.没有双击亮屏<br>7.锁屏界面没有快捷方式</p>
+<h2 id="superiorOS"><a href="#superiorOS" class="headerlink" title="superiorOS"></a>superiorOS</h2><h4 id="评价：-1"><a href="#评价：-1" class="headerlink" title="评价："></a>评价：</h4><p>功能少，问题多，要自己改的东西太多，有点过于繁琐，不考虑日用（爱折腾不是喜欢浪费时间和给自己找麻烦，相反是按照自己的意愿让手机变得更好用才对，所以相对于其他rom这个rom及没有什么十分吸引人的功能，设置和使用还比其他rom麻烦，用其他rom经过简单设置很快就能达到甚至超过这个rom设置半天才能达到的效果，所以我不考虑日用）</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结:"></a>总结:</h4><p>1.自定义少，很多功能都没有，如：三指下滑截屏，状态栏时间居中和桌面隐藏，但是有无速度时网速显示隐藏<br>2.终于有安卓13的多种避之取色方案了<br>3.下拉菜单没有查看当前进程的功能<br>4.相机不是谷歌相机，包名是los的，错有两个相机？？？<br>5.小细节，未授权应用安装时不跳提示窗口直接转到相应的设置界面，省去一步点击<br>6.图案解锁只有3×3，没有6×6的爽快<br>7.安卓13应用开无障碍麻烦了，现在在无障碍授权界面需要先点一下灰色提示受限制的设置，然后打开应用详情界面，这时候右上角会多出来三个点，验证身份后回到无障碍授权界面再打开，麻烦是真麻烦，安全？不清楚<br>8.没有自带音乐播放器，差评（   （系统应用里有音效设置软件离谱）<br>9.自定义设置界面无汉化，高级重启界面也没有，一句话汉化不全<br>10.线形图标风格很统一，suki<br>11.桌面不是pixcllauncher<br>12.动画有点小卡<br>13.自带谷歌键盘有问题，不知道为啥没有莫奈取色<br>14.自带图库<br>15.续航一般</p>
+<p>—————-12.05新版   还是那样，很离谱不考虑日用<br>1.依旧无开机引导，好坏参半<br>2.谷歌键盘版本老，开机还没中文，难受<br>3.自定义无汉化，内容少，不方便<br>4.自带一个定制高级版retromusic</p>
+<h2 id="nustara-project"><a href="#nustara-project" class="headerlink" title="nustara project"></a>nustara project</h2><div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>图片</span></div>
+    <div class="xContent"><div class="inner">
+        <p><img src="/images/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/n1.webp" alt="n1"></p>
+<p><img src="/images/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/n2.webp" alt="n2"></p>
+<p><img src="/images/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/n3.webp" alt="n3"></p>
+<p><img src="/images/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/n4.webp" alt="n4"></p>
+ 
+    </div></div>
+    </div>
+
+<h4 id="评价：-2"><a href="#评价：-2" class="headerlink" title="评价："></a>评价：</h4><p>很有特色的官方rom，超级好看，不接受任何反驳   补：下拉菜单的动画在日用的时候会有卡顿的情况小问题，续航不是很可以，刷了墓碑内核安装了cu调度调全局powersave还是感觉压不住，有点不行</p>
+<h4 id="总结-1"><a href="#总结-1" class="headerlink" title="总结:"></a>总结:</h4><p>1.点击音效有点肾虚（听多了还可以），解锁音效clickly，总之是自己独有的音效<br>2.无自带音乐播放器<br>3.状态栏的时钟很好看<br>4.设置界面有风格ui美化，好评<br>5.自定义设置汉化奇少<br>6.有个毛玻璃风格很wow<br>7.电池图标自定义多<br>8.状态栏时间居中歪了逼死强迫症，且不能调整大小<br>9.音量栏里有媒体控制<br>10.动画很流畅<br>11.系统没有自带图库？？？<br>12.磁贴里没有vpn总之此贴内容较少<br>13.好看好看好看好看</p>
+<h2 id="BiancaProject"><a href="#BiancaProject" class="headerlink" title="BiancaProject"></a>BiancaProject</h2><h4 id="评价：-3"><a href="#评价：-3" class="headerlink" title="评价："></a>评价：</h4><p>精简但过于毛坯,追求极简的可以尝试。</p>
+<h4 id="总结-2"><a href="#总结-2" class="headerlink" title="总结:"></a>总结:</h4><p>1.没有开机引导<br>2.没有gapp<br>3.精简，但是我感觉过于精简，连自定义设置都没有<br>4.应用均无莫奈取色</p>
+<h2 id="mcaosp"><a href="#mcaosp" class="headerlink" title="mcaosp"></a>mcaosp</h2><h4 id="评价：-4"><a href="#评价：-4" class="headerlink" title="评价："></a>评价：</h4><p>没啥特色，自定义太少还看不懂（抱歉，这算我的问题）</p>
+<h4 id="总结：-1"><a href="#总结：-1" class="headerlink" title="总结："></a>总结：</h4><p>1.没有自己的开机动画<br>2.自定义无汉化，且不够丰富<br>3.有自己的音效<br>4.有人脸解锁<br><del>4.没有震动反馈</del></p>
+<h2 id="pixel-experience"><a href="#pixel-experience" class="headerlink" title="pixel experience"></a>pixel experience</h2><h4 id="评价-amp-总结"><a href="#评价-amp-总结" class="headerlink" title="评价&amp;总结:"></a>评价&amp;总结:</h4><p>老熟人了 半天（半个多小时）开不开机 估计也没啥特点</p>
+<h2 id="BananaDroid"><a href="#BananaDroid" class="headerlink" title="BananaDroid"></a>BananaDroid</h2><h4 id="评价：-5"><a href="#评价：-5" class="headerlink" title="评价："></a>评价：</h4><p>可以日用的系统捏，各方面体验都还行，是我的现役系统</p>
+<h4 id="总结：-2"><a href="#总结：-2" class="headerlink" title="总结："></a>总结：</h4><p>1.<del>没有震动反馈（直接劝退）</del>（破案了，没有震动是我设备的问题，我的手机的震动马达估计接触不良了，拆看后晃了晃装好后板了板就好了，因垂丝汀）<br>2.有人脸识别（很可以，但是只能设置一次，再次设置会闪退）<br>3.状态栏自定义很多，图标很丰富<br>4.通知栏显示通知来源有bug<br>5.下拉菜单网络图标开关时显示有bug<br>6.下拉菜单的图标和文字可以竖直排列，个人很喜欢<br>7.自带桌面可以直接用用cayicons，牛逼，看了下桌面里的特别鸣谢里有lawnchair，懂了，就用你了</p>
+<h2 id="Spark-OS"><a href="#Spark-OS" class="headerlink" title="Spark OS"></a>Spark OS</h2><h4 id="评价：-6"><a href="#评价：-6" class="headerlink" title="评价："></a>评价：</h4><p>中规中矩，没大毛病，可以考虑日用</p>
+<h4 id="总结：-3"><a href="#总结：-3" class="headerlink" title="总结："></a>总结：</h4><p>1.无开机引导<br>2.壁纸取色蓝色，蓝色赛高！！！！！<br>3.自定义设置部分汉化<br>4.自定义图标很丰富，自定义信号图标里面竟然有个华为，好家伙类原生也能爱国（）</p>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>图片</span></div>
+    <div class="xContent"><div class="inner">
+        <p><img src="/images/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/b3.webp" alt="b3"></p>
+ 
+    </div></div>
+    </div>
+
+<p>5.自定义很丰富,但是感觉分类不太合理，有的选项不是很好找<br>6.没有自带输入法？离谱啊<br>7.自带广告屏蔽，nb<br>8.系统自带的壁纸很好看<br>9.有人脸好评</p>
+<h2 id="mcaosp-1"><a href="#mcaosp-1" class="headerlink" title="mcaosp"></a>mcaosp</h2><p>两个下载链接一个打不开一个不能浏览器下载，爬吧</p>
+<h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h1><p>最后在体验了总多系统中我选择了前文的BananaDroid，主要因为它本身没啥大问题，而且系统自带桌面能够直接用lawnchair的图标包</p>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>图片</span></div>
+    <div class="xContent"><div class="inner">
+        <p><img src="/images/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/b1.webp" alt="b1"></p>
+<p><img src="/images/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/b2.webp" alt="b2"></p>
+ 
+    </div></div>
+    </div>
+
+<p>如果以后还有更好用更有趣的系统我还会分享给大家的</p>
+<p>最后特别感谢酷安大佬：@Ramsong @s1983 @弗朗西思科 @stayalone们的搬运，正是有了你们的搬运我才能体验到这么多的rom</p>
+<p>祝大家2023快乐！！！</p>
+<p><span style="color: rgba(0,0,0,0);">个性</span></p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://example.com/2023/01/08/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://example.com/2023/01/08/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/";
+            const title         = "「搞机记录5：红米note5③-安卓13类原生体验」";
+            const excerpt       = `前言本篇文章为红米note5安卓13rom不完全的不完全简单体验。`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/%E5%AE%89%E5%8D%93/" rel="tag">安卓</a>, <a class="tag-none-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-01-14T12:50:42.229Z" itemprop="dateModified">最后编辑：2024-01-14</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" Android美化教程①——material you风格探索记录" href="/2022/08/30/Android美化教程①/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 一次理发引发的思考" href="/2023/09/04/一次理发引发的思考/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <div class="post-comments lazy-load bg-image">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: 'https://com.rainhoutas.one/', el: '#tcomment' });
+        }
+        if (typeof twikoo === 'undefined') {
+            const src = '/vendors/twikoo@1.5.11/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/houtas.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"> 𝒯𝒽ℯ  𝓅𝒶𝓈𝓉  𝒾𝓈  𝓃ℯ𝓋ℯ𝓇  𝒹ℯ𝒶𝒹,  <br> ℐ𝓉  𝒾𝓈  𝓃ℴ𝓉  ℯ𝓋ℯ𝓇  𝓅𝒶𝓈𝓉. </p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                15
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                5
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                4
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%AD%A3%E7%89%87"><span class="toc-text">正片</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#crDroid"><span class="toc-text">crDroid</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A"><span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#superiorOS"><span class="toc-text">superiorOS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-1"><span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nustara-project"><span class="toc-text">nustara project</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-2"><span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-1"><span class="toc-text">总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BiancaProject"><span class="toc-text">BiancaProject</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-3"><span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-2"><span class="toc-text">总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mcaosp"><span class="toc-text">mcaosp</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-4"><span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A-1"><span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pixel-experience"><span class="toc-text">pixel experience</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7-amp-%E6%80%BB%E7%BB%93"><span class="toc-text">评价&amp;总结:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#BananaDroid"><span class="toc-text">BananaDroid</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-5"><span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A-2"><span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spark-OS"><span class="toc-text">Spark OS</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%84%E4%BB%B7%EF%BC%9A-6"><span class="toc-text">评价：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A-3"><span class="toc-text">总结：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mcaosp-1"><span class="toc-text">mcaosp</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-text">结尾</span></a></li></ol>
+    </div>
+</aside>
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95/">功能测试</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%95/">搞机记录</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BE%8E%E5%8C%96/">美化</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%81%8A%E5%A4%A9%E6%9D%82%E8%B0%88/">聊天杂谈</a><span class="category-list-count">6</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 0.7em;">安卓</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.8em;">技术</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 0.6em;">测试</a> <a href="/tags/%E8%AF%B4%E8%AF%B4/" style="font-size: 0.7em;">说说</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2024/01/14/%E4%BA%8C%E5%91%A8%E5%B9%B4%E5%BF%AB%E4%B9%90/"><i class="fa  fa-book"></i> 博客二周年快乐</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/09/04/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%95%E7%89%B9%E5%88%AB%E7%AF%87/"><i class="fa  fa-book"></i> 搞机记录特别篇：Google Pixel5 真原生舒爽体验</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/09/04/%E4%B8%80%E6%AC%A1%E7%90%86%E5%8F%91%E5%BC%95%E5%8F%91%E7%9A%84%E6%80%9D%E8%80%83/"><i class="fa  fa-book"></i> 一次理发引发的思考</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2023/01/08/%E6%90%9E%E6%9C%BA%E8%AE%B0%E5%BD%955/"><i class="fa  fa-book"></i> 搞机记录5：红米note5③-安卓13类原生体验</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/08/30/Android%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B%E2%91%A0/"><i class="fa  fa-book"></i> Android美化教程①——material you风格探索记录</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        <li><a href="mailto:1271084579@qq.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://t.me/Rain houtas"><i class="fa fa-telegram"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://github.com/rainhoutas">
+                                    
+                                        <i class="fa fa-github"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 RainHoutas的博客 版权所有.</li>
+                            <li>已存活时长<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by houtas.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://rainhoutas.github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="snow-switch">
+                        <span class="fa fa-snowflake-o"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+    <div>
+        <canvas id="snow"></canvas>
+        <script async src="/js/snow.min.js"></script>
+    </div>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="5351093313"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
